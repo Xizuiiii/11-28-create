@@ -1,11 +1,19 @@
 void new2(){
 	float ave=0;
 	int sum,length=0;
-	int ages[]={12,13,14,15,16};
+	int ages[]={18,13,14,15,16};
 	length=sizeof(ages)/sizeof(ages[0]);
 	for(int a=0;a<length;a++){
 		sum += ages[a];
 	}
 	ave = sum /length;
 	printf("%d\n%.2f\n",sum, ave);
+	//now im looking for the lowest element in array
+	int lowestAge=ages[0];
+	for(int i=0;i<=length;i++){
+		if(lowestAge>ages[i]){
+			lowestAge=ages[i];
+		}
+	}
+	printf("%d\n",lowestAge);
 }
