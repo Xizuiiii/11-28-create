@@ -1,0 +1,11 @@
+void new2(){
+	float ave=0;
+	int sum,length=0;
+	int ages[]={12,13,14,15,16};
+	length=sizeof(ages)/sizeof(ages[0]);
+	for(int a=0;a<length;a++){
+		sum += ages[a];
+	}
+	ave = sum /length;
+	printf("%d\n%.2f\n",sum, ave);
+}
