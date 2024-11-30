@@ -1,0 +1,28 @@
+ int main()
+{   
+	int myAge=25;
+	int votingAge=18;
+	printf("%d\n",myAge>=votingAge);
+	//
+	if(myAge>=votingAge)
+	{
+		printf("ALLOWD!\n");
+	}
+	else{
+		printf("NO\n");
+	}
+	// now time if example
+	int time =20;
+	if(time<18){
+		printf("Good Morning!\n");
+	}
+	else if(time>=20)
+	{
+		printf("Good Day\n");
+	}
+	else
+	{
+		printf("Good Evening\n");
+	}
+	/*another way*/
+	(time<18)?printf("Good day\n"):printf("good eve\n");
