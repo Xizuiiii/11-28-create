@@ -1,0 +1,16 @@
+	//now im learning 2D array
+	int martix[2][3]={{3,4,5},{6,7,8}};
+	printf("%d!\n",martix[0][0]); //output:3
+	//change element
+	martix[0][0]=9;
+	printf("%d!\n",martix[0][0]);  //9
+	//loop through a 2D arrray
+	//each dimension needs a loop
+	int D[2][3]={{1,1,4},{5,1,4}};
+	int ii,jj=0;  //print all the elements
+	for(ii=0;ii<2;ii++){
+		for(jj=0;jj<3;jj++){
+			printf("%d\n",D[ii][jj]);
+		}
+		printf("%d\n",D[ii][jj]);
+	}
