@@ -1,0 +1,13 @@
+	//now im learning strings
+	char greeting[]="HELLO WORLD!";
+	printf("%s\n",greeting);
+	printf("%c\n",greeting[0]); //output:H
+	//we must usr %c to print a single character
+	greeting[0]='J';  //单引号 
+	printf("%s\n",greeting);
+	char getring[]={'H','E','\0'}; // '\0'must!! tell that its the end of string
+	printf("%s\n",getring);
+	//real life example
+	char message[]="Welcome";
+	char message1[]="Antony";
+	printf("%s %s!\n",message,message1);  //out put welcome antony!
