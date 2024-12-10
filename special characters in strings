@@ -1,0 +1,9 @@
+void new3(){
+	//special characters in strings
+	char txt[]="We are \"A tEAM\""; //A tEAM
+	char txt1[] = "It\'s alright."; //It's alright
+    printf("%s\n",txt);
+	printf("%s\n",txt1);
+	
+	return 0;
+}
