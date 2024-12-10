@@ -1,0 +1,17 @@
+	//string functions
+	char alphabel[]="ABCDEFGHIJK";
+	printf("%d\n",strlen(alphabel)); //output the length of string'11'
+	printf("%d\n",sizeof(alphabel)); //output 12 :include'\0'
+	//another emample
+	char alphable1[50]="ABCDEFGHIJ";
+	printf("%d\n",strlen(alphable1)); //10
+	printf("%d\n",sizeof(alphable1)); //50 ->return memory size
+	//concatenate strings
+	char str1[50]="Hello";
+	char str2[]="ZiYuan";
+	strcat(str1,str2);
+	printf("%s\n",str1);
+	//compare
+	char str3[]="ZiYuan";
+	printf("%d\n",strcmp(str3,str2));//equal->0
+	return 0;
