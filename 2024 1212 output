@@ -1,0 +1,8 @@
+void new4(){
+	int MyString[10]; // must sprcify the size
+	scanf("%s",MyString); //scanf string do not need '&'
+	printf("%s\n",MyString);
+	//now iam learning fgets function
+	char fullname[30];
+	fgets(fullname,sizeof(fullname), stdin); //3 must arguments 
+	printf("Hello %s\n",fullname); //fgets to read a line when working with strings
