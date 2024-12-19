@@ -1,0 +1,25 @@
+void new5()
+{
+	int MyAge=19;
+	printf("%p\n",&MyAge); //return where the variable stored
+	                       //&MyAge is a pointer ;stores the memory address
+	int *ptr=&MyAge; //creat pointer with '*'
+	                 //pointer variable stores the address
+	printf("%p\n",ptr); //the same type
+	printf("%d\n",*ptr); //19 此处是一个解引用符
+	//now array & pointer
+	int myNumber[]={20,25,50,100};
+	int i;
+	for(i=0;i<=3;i++){
+		printf("%p\n",&myNumber[i]); 
+	}  //每一个地址逐渐+4 : 一个整型变量的大小为4
+	//review sizeof
+	int review=0;
+	printf("%lu\n",sizeof(review)); //4
+	//数组的名字其实是一个指针； 是指向数组第一个元素的指针
+	printf("%p\n",myNumber);
+	printf("%p\n",&myNumber[0]);//一样的
+	printf("%d\n",*myNumber); //mynumber[o]的值 20
+	printf("%d\n",*(myNumber+1)); //[1]=25,跳过一个int 大小
+	return 0; 
+}
